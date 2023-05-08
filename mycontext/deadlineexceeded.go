@@ -7,7 +7,7 @@ var DeadlineExceeded error = deadlineExceededError{}
 type deadlineExceededError struct{}
 
 func (deadlineExceededError) Error() string {
-	return "mycontext deadline exceeded"
+	return "context deadline exceeded"
 }
 
 func (deadlineExceededError) Timeout() bool {
